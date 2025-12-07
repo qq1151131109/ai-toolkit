@@ -1,12 +1,15 @@
 import Link from 'next/link';
-import { Home, Settings, BrainCircuit, Images, Plus } from 'lucide-react';
+import { Home, Settings, BrainCircuit, Images, Plus, Download, Sparkles, Workflow } from 'lucide-react';
 import { FaXTwitter, FaDiscord, FaYoutube } from 'react-icons/fa6';
 
 const Sidebar = () => {
   const navigation = [
     { name: 'Dashboard', href: '/dashboard', icon: Home },
+    { name: 'Pipeline', href: '/pipeline', icon: Workflow },
     { name: 'New Job', href: '/jobs/new', icon: Plus },
     { name: 'Training Queue', href: '/jobs', icon: BrainCircuit },
+    { name: 'Data Scraper', href: '/scraper', icon: Download },
+    { name: 'Data Cleaner', href: '/cleaner', icon: Sparkles },
     { name: 'Datasets', href: '/datasets', icon: Images },
     { name: 'Settings', href: '/settings', icon: Settings },
   ];
