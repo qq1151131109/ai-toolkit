@@ -552,6 +552,7 @@ export const modelArchs: ModelArch[] = [
       ],
       'config.process[0].sample.guidance_scale': [1, 4],
       'config.process[0].sample.sample_steps': [8, 25],
+      'config.process[0].train.lr': [0.00008, 0.0001], // Z-Image Turbo needs lower lr due to distillation
     },
     disableSections: ['network.conv'],
     additionalSections: ['model.low_vram', 'model.layer_offloading', 'model.assistant_lora_path'],
